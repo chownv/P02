@@ -1,0 +1,567 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 2rem;
+  background-color: #F8F7F2;
+}
+
+.element {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-top-width: 0.2rem;
+  border-top-style: solid;
+  border-top-color: #5F6973;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: #FFF;
+  background-color: #E0E5DE;
+  text-decoration: none;
+  border-radius: 0.25em;
+  margin-bottom: 2rem;
+  font-size: 20px
+
+}
+
+nav a{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color:#5F6973;
+  transition:color 0.5s;
+}
+
+nav a:hover, nav a:focus {
+  color:#B1BC9E;
+}
+h1{
+  font-size: 50px;
+}
+h2 {
+  margin-top: 6rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #6d7d8c;
+}
+
+p {
+  margin-bottom: 0em;
+}
+
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*Styling for in-text link*/
+.in-text-link{
+  color: #9e8b7d;
+  text-decoration:none;
+  transition: color 0.1s ease-out;
+  text-shadow:0px -1px 0px #CFC8BD;
+}
+
+.in-text-link:hover, .in-text-link:focus {
+  text-decoration:underline;
+  color: #bdaa9d;
+}
+
+/*Styling for navigation button*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #FFF;
+  background-color: #8f997f;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #B2BD9F;
+}
+
+/*Styling for submition/ reset button*/
+.btn-submit, .btn-reset{ 
+  border-radius:0.25em;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  padding:6px 24px;
+  text-decoration:none;
+  background-color: #5F6973;
+  border-width: 0px;
+}
+
+.btn-submit:hover,.btn-reset:hover {
+  background-color:#a1b5c9;
+}
+
+.btn-submit:hover, .btn-reset:active {
+  position:relative;
+  top:1px;
+}
+
+
+/*Styling for radio button*/
+.radio-button{
+  color: #719FDB;
+  font-kerning: 1.1em;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+
+.radio-button:hover {
+  color: #274782;
+  font-weight: bolder;
+}
+
+.radio-button input{
+  width: 30px;
+}
+
+
+/*Styling for text input*/
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 0.15em;
+}
+
+input[type=text]:focus {
+  border: 1px solid #69737D;
+}
+
+label {
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+.confirm{
+  border-radius:0.25em;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  padding:6px 24px;
+  text-decoration:none;
+  background-color: #5F6973;
+  width:50px;
+}
+
+.confirm:hover {
+  background-color:#a1b5c9;
+}
+
+
+/*Styling for image link*/
+.image_link{
+  padding: 40px;
+}
+.image_link:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:300px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+/*Headings-------------*/
+.heading1{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.heading2{
+  font-size: 30px;
+}
+
+.heading3{
+  font-size: 25px;
+  font-weight:lighter;
+}
+
+.heading4{
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+
+/*Paragraphs-------------*/
+.paragraphs {
+  padding: 2em;
+  border-radius: .3em;
+  background-color: #ffffff;
+  border: 1.5px solid #E5E7DA;
+  box-shadow: 3px 3px 3px #B1BC9E;
+}
+
+
+/*Bullet list-------------*/
+
+.blist ul{
+  font-family:"Lato"; 
+  border: 1px solid red;
+}
+
+/*
+  Numbered lists----------------
+*/
+.nlist {
+  display:flex;
+  padding: 10px;
+  background-color: #ffffff;
+  line-height: 2em;
+  border: 2px solid #00000030;
+  border-radius: 0.2em;
+  width:20%;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/*
+  Navigation bar----------------
+*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #B1BC9E;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  font-family: "Lato";
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color:  #F0F0F0;
+  transition: 0.3s;
+}
+
+
+/*
+  Product lisitng-----------------
+*/
+
+.list{
+  position: absolute;
+
+  width:24%;
+  height:60%;
+    
+white-space: nowrap;
+
+}
+.list h1{
+  display:flex;
+   text-align: center;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: bold;
+  margin:0.4rem 0;
+  margin-bottom: 2rem;
+   overflow:hidden;
+  
+
+}
+.list h2{
+  display:flex;
+  text-align: center;
+  
+  
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: lighter;
+  margin:1rem 0;
+  border-bottom-width:5px;
+  border-bottom-style: solid;
+  border-bottom-color:#F8F7F2;
+  transition:all 1s ;
+  
+
+ overflow:hidden;
+
+}
+
+.list h2:hover{
+   display:flex;
+   text-align: center;
+  
+  border-bottom-width:5px;
+  border-bottom-style: solid;
+  border-bottom-color:#5F6973;
+}
+.list a{
+
+  text-decoration: none;
+  color:black;
+}
+@media only screen and (max-width: 500px){
+  .list h1{
+  font-size: 8px;
+  }
+  .list h2{
+  font-size: 6px;
+  
+  overflow: visible;
+  }
+
+
+}
+.list_title{
+   float:right;
+  display:flex;
+  
+  width: 70%;
+  margin-bottom:0;
+ 
+   
+}
+.list_title h3{
+  padding-left: 1rem;
+  text-align:left;
+  font-size: 30px;
+  color:black;
+  padding-bottom: 0;
+  transition:color 1s;
+}
+.list_title h3:hover{
+  color:#B1BC9E;
+}
+.list_line{
+  float:right;
+  width:70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom-style:solid;
+  border-bottom-width:0.2rem;
+  border-color: #E3DFD4;
+
+}
+
+.grid{
+
+  float:right;
+  display:flex;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 2rem;
+  
+
+}
+
+
+.grid>div{
+
+  flex-basis: 40%;
+  margin: 0.5rem;
+   overflow: hidden;
+   transition:all 1s;
+
+}
+
+.grid>div:hover{
+  box-shadow: 0px 3px 3px #bbbbbb; 
+}
+.pic{
+  overflow: hidden;
+}
+
+
+
+.grid img{
+  width:100%;
+
+  transform:scale(1);
+  transition:transform 1s;
+  
+}
+.grid img:hover{
+  transform:scale(1.2);
+
+}
+
+
+.grid h1{
+  text-align: center;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: bold;
+  margin:0.4rem 0;
+}
+.grid h2{
+  text-align: center;
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: lighter;
+  margin:0.4rem 0;
+}
+
+@media only screen and (max-width: 500px){
+  .grid{
+    flex-direction: column;
+  }
+
+}
+  
+
+
+/*
+  Payment form-----------------
+*/
+
+.payment {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1.5px solid #E5E7DA;
+  border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-shadow: 3px 3px 3px #B1BC9E; 
+}
+
+.payment input{
+  width:100%;
+}
+
+.payment-form1 input{
+  width: 30px;
+}
+
+.pay-label {
+  font-size: 16px;
+}
+
+/*
+  Checkout cart-----------------
+*/
+
+.cart-item {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  border: 1.5px solid #E5E7DA;
+  border-radius: 0.2em;
+  display: flex;
+  box-shadow: 3px 3px 3px #B1BC9E; 
+}
+
+.cart-left {
+  flex: 80%;
+}
+
+
+.cart-right {
+  flex: 10%;
+}
+
+/*
+  ART DIRECTION-----------------
+*/
+/*
+  Color palettes-----------------
+*/
+
+.color-palettes {
+  display: flex;
+  padding: .5em;
+  background-color: #FFF;
+
+}
+
+.color-palettes>div {
+  flex-basis: 20%;
+  text-align: center;
+  padding: 100px 0 ;
+}
+
+.color-palettes>div:nth-of-type(1){
+  background-color: #E5E7DA;
+}
+
+.color-palettes>div:nth-of-type(2){
+  background-color: #E3DFD4;
+}
+
+.color-palettes>div:nth-of-type(3){
+  background-color: #B1BC9E;
+}
+
+.color-palettes>div:nth-of-type(4){
+  background-color: #E2E7ED;
+}
+
+.color-palettes>div:nth-of-type(5){
+  background-color: #5F6973;
+}
+
+.font>h3 {
+  font-size: 30px;
+  font-kerning: 1em;
+  color: #465E4A;
+}
+
+.font {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50em;
+}
+
+
+
+/*
+  Branding ideas-----------------
+*/
+.branding>h4 {
+  color: #919c7e;
+  font-style: italic;
+}
+
+
