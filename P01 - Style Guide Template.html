@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://www.sfu.ca/~yha128/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <title>P01 - Style Guide Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./P01 - Style Guide Template_files/main.css" rel="stylesheet">
+    <link href="./P01 - Style Guide Template_files/css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <h1>P01 - Style Guide Template</h1>
+
+    <p>A template you can use to start building out your own style guides with.</p><br>
+
+
+    <nav>     
+      <a href="http://www.sfu.ca/~yha128/#interactive_elements">Interactive Elements</a>
+      <a href="http://www.sfu.ca/~yha128/#text_elements">Text Elements</a>
+      <a href="http://www.sfu.ca/~yha128/#combined_elements">Combined Elements</a><br>
+      <a href="http://www.sfu.ca/~yha128/#product_listing">Product Listing</a>
+      <a href="http://www.sfu.ca/~yha128/#checkout_form">Checkout form</a>
+      <a href="http://www.sfu.ca/~yha128/#citations">Citations</a>
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- Intext link styling section -->
+      <section class="element">
+        <h3>Text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="in-text-link"&gt;text link&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="in-text-link" href="http://www.sfu.ca/~yha128/#">text link</a>
+      </section>
+
+
+      <!-- Default navigation button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="http://www.sfu.ca/~yha128/#">Default Button</a>
+      </section>
+
+
+      <!-- Submit/ reset button styling section -->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.btn-submit</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="btn-submit" type="submit" /&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <input class="btn-submit" type="submit">
+
+        <h4>CSS selector:</h4>
+          <p>.btn-reset</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;input class="btn-reset" type="reset" /&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <input class="btn-reset" type="reset">
+        </section>
+
+
+        <!-- Text input styling section -->
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+
+          <h4>CSS selector:</h4>
+
+          <div><p>input[type=text]</p></div>
+          <div><p>input[type=text]:focus</p></div>
+          <div><p>lable</p></div>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;form&gt;
+            &lt;label for="name"&gt;Name&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" &gt;
+            &lt;/form&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <form>
+            <div><label for="name">Name</label></div>
+            <input type="text" id="name" name="name">
+          </form>
+        </section>
+
+        <!-- Radio button styling section -->
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+
+          <h4>CSS selector:</h4>
+          <p>radio-button</p>
+
+          <h4>Sample code:</h4>
+          <code> 
+            &lt;div class="radio-button"&gt;
+            &lt;input id="option1" type="radio" name="option1"&gt;Yes
+            &lt;div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="radio-button">
+            <input id="option1" type="radio" name="option1">Yes
+          </div>
+
+          <div class="radio-button">
+            <input id="option2" type="radio" name="option2">No
+          </div>
+        </section>
+
+        <!-- Image as a link section -->
+        <section class="element">
+          <h3>Image as a Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.image_link</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a href="https://www.amazon.com/Indoor-Concrete-Planter-Gardening-Succulent/dp/B07P9SD8X8"&gt;
+            &lt;img src="indoor_planter.jpg" class="image_link" height="200" width="200" alt="home planter"&gt;
+          </code>
+          <a href="https://www.amazon.com/Indoor-Concrete-Planter-Gardening-Succulent/dp/B07P9SD8X8"><img src="./P01 - Style Guide Template_files/indoor_planter.jpg" class="image_link" height="200" width="200" alt="home planter"></a>
+        </section>
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+        <!-- Levels of headings section -->
+        <section class="element">
+         <h2>Headings</h2>
+         <h3>CSS selector:</h3>
+         <div><p>.heading1</p></div>
+         <div><p>.heading2</p></div>
+         <div><p>.heading3</p></div>
+         <div><p>.heading4</p></div> 
+
+         <h3>Sample code:</h3>
+         <code>&lt;a class="heading1"&gt;Heading example one&lt;/a&gt;&lt;br&gt;</code>
+
+         <h3>Rendered element:</h3>
+         <a class="heading1">Heading example one</a><br>
+         <a class="heading2">Heading example two</a><br>
+         <a class="heading3">Heading example three</a><br>
+         <a class="heading4">Heading example four</a><br>
+       </section>
+
+       <!-- Paragraph section -->
+       <section class="element">
+        <h3>Paragraphs</h3>
+        <p>.paragraphs</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="paragraphs"&lt;p&gt;The main focus of the company is to bring the world minimal but unique designs of home decorations made from sustainable materials. The most popular products are indoor planters that grow in modern pots and bottles. Having a glance at green can calm your mind and remind you of all the goodness in the world. &lt;/p&gt; &lt;/div&gt;</code><br>
+
+
+        <h3>Rendered element:</h3>
+        <div class="paragraphs"><p>The main focus of the company is to bring the world minimal but unique designs of home decorations made from sustainable materials. The most popular products are indoor planters that grow in modern pots and bottles. Having a glance at green can calm your mind and remind you of all the goodness in the world. </p> </div>
+      </section>
+
+      <!-- Numbered lists section -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <p>.nlist ol</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="nlist"&gt;</code><br>
+        <code>&lt;ol&gt;</code><br>
+        <code>&lt;li&gt;Numbered list object one&lt;/li&gt;</code><br>
+        <code>&lt;li&gt;Numbered list object two&lt;li&gt;</code><br>
+        <code>&lt;li&gt;Numbered list object three&lt;/li&gt;</code><br>
+        <code>&lt;/ol&gt;</code><br>
+        <code>&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="nlist">
+          <ol>
+            <li>Numbered list object one</li>
+            <li>Numbered list object two</li>
+            <li>Numbered list object three</li>
+          </ol>
+        </a>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+      <!-- Main navigation section -->
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <h4>CSS selector:</h4>
+        <div><p>.navbar ul</p></div>
+        <div><p>.navbar li</p></div>
+        <div><p>.navbar li a</p></div>
+        <div><p>.navbar li a:hover</p></div>
+
+        <h4>Sample code:</h4>
+        <code>
+        &lt;div class="navbar"&gt;</code>
+        <code>&lt;ul&gt;</code>
+        <code>&lt;li&gt;&lt;a class="active" href="#home"&gt;HOME&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a href="#SHOP"&gt;SHOP&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a href="#about"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a href="#contact"&gt;CONTACT&lt;/a &gt;&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+        <code>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="navbar">
+          <ul>
+            <li><a class="active" href="http://www.sfu.ca/~yha128/#home">HOME</a></li>
+            <li><a href="http://www.sfu.ca/~yha128/#SHOP">SHOP</a></li>
+            <li><a href="http://www.sfu.ca/~yha128/#about">ABOUT</a></li>
+            <li><a href="http://www.sfu.ca/~yha128/#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </section>
+    </section> 
+    <!-- Product listing section -->
+    <section id="product_listing">
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <div><p>.grid</p></div>
+        <div><p>.grid h1</p></div>
+        <div><p>.grid h2&gt;</p></div>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div &gt; &lt;src="indoor_planter.jpg" alt="indoor planter"&gt;</code>
+        <code>&lt;h1&gt; Indoor planter &lt;h1&gt;</code>
+        <code>&lt;h2&gt; $18 &lt;h2&gt;</code><br>
+
+        <h4>Rendered element:</h4>
+        <div class="grid">
+          <div>
+            <img src="./P01 - Style Guide Template_files/indoor_planter.jpg" alt="indoor planter">
+            <h1>Indoor planter</h1>
+            <h2>$18</h2>
+          </div>
+          <div><img src="./P01 - Style Guide Template_files/indoor_planter.jpg" alt="indoor planter">
+            <h1>Indoor planter</h1>
+            <h2>$18</h2>
+          </div>
+          <div><img src="./P01 - Style Guide Template_files/indoor_planter.jpg" alt="indoor planter">
+            <h1>Indoor planter</h1>
+            <h2>$18</h2>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div>
+            <img src="./P01 - Style Guide Template_files/indoor_planter.jpg" alt="indoor planter">
+            <h1>Indoor planter</h1>
+            <h2>$18</h2>
+          </div>
+          <div><img src="./P01 - Style Guide Template_files/indoor_planter.jpg" alt="indoor planter">
+            <h1>Indoor planter</h1>
+            <h2>$18</h2>
+          </div>
+          <div><img src="./P01 - Style Guide Template_files/indoor_planter.jpg" alt="indoor planter">
+            <h1>Indoor planter</h1>
+            <h2>$18</h2>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+
+    <!-- Payment form section -->
+    <section id="checkout_form">
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>CSS selector</h4>
+        <p>.payment</p>
+
+        <h4>Sample code</h4>
+        <code>&lt;div class="payment"&gt;</code>
+        <code>&lt;div class="payment-form1"&gt;</code>
+        <code>&lt;input id="paypment_form1" type="radio" name="card" value="debit"&gt;Debit card &lt;/div&gt;</code><br>
+
+        <div class="payment"> 
+          <div class="payment-form1">
+            <input id="payment_form1" type="radio" name="card" value="debit">Debit card
+          </div>
+          <div class="payment-form1">
+            <input id="payment_form2" type="radio" name="card" value="master">Master card
+          </div>
+          <div class="payment-form1">
+           <input id="payment_form3" type="radio" name="card" value="visa">Visa card
+         </div><br>
+
+
+         <label class="pay-label">Name on card</label>
+         <input type="text" name="username"><br>
+         <label class="pay-label">Card number</label>
+         <input type="text" name="username"><br>
+         <label class="pay-label">Exp Month/ Year</label>
+         <input type="text" name="username"><br>
+         <label class="pay-label">CVV</label>
+         <input type="text" name="username"><br>
+         <a class="confirm" href="http://www.sfu.ca/~yha128/#">Confirm</a>
+       </div>
+     </section>
+
+     <!-- Checkout cart section -->
+     <section class="element">
+      <h3>Checkout Cart</h3>
+      <p>.cart-item</p>
+      <h4>Sample code:</h4>
+      <code>&lt;div class="cart-item"&gt;</code>
+      <code>&lt;div class="cart-left"&gt;</code>
+      <code>&lt;h3&gt;Cart&lt;/h3 &gt;&lt;hr&gt;&lt;br&gt; <br>
+        &lt;p&gt;&lt;a href="#"Product 1 &lt;/a&gt;&lt;/p&gt;
+      </code>
+
+      <code>&lt;div class="cart-right"&gt;</code>
+      <code>&lt;h3&gt;4&lt;/h3&gt;  <br>
+        &lt;p&gt;4&lt;p&gt;
+      </code>
+      <h4>Rendered element:</h4>
+      <div class="cart-item">
+        <div class="cart-left">
+          <h3>Cart</h3><hr><br>
+          <p><a href="http://www.sfu.ca/~yha128/#">Product 1</a></p>
+          <p><a href="http://www.sfu.ca/~yha128/#">Product 2</a></p>
+          <p><a href="http://www.sfu.ca/~yha128/#">Product 3</a></p>
+          <p><a href="http://www.sfu.ca/~yha128/#">Product 4</a></p><br>
+          <hr>
+          <h3>Total</h3>
+        </div>
+        <div class="cart-right">
+          <h3>4</h3><hr><br>
+          <p>$20</p>
+          <p>$28</p>
+          <p>$16</p>
+          <p>$35</p><br>
+          <hr>
+          <h3>99</h3>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+  <!--  COMBINED ELEMENTS SECTION //-->
+  <section id="Art-direction">
+    <h2>Art direction</h2>
+    <!-- Color palettes-->
+    <section> 
+      <h3>Color palettes</h3>
+      <div class="color-palettes">
+        <div><p>#E5E7DA</p></div>
+        <div><p>#E3DFD4</p></div>
+        <div><p>#B1BC9E</p></div>
+        <div><p>#E2E7ED</p></div>
+        <div><p>#5F6973</p></div>
+      </div><br><hr> 
+    </section>
+
+    <!-- Font-->
+    <section>
+      <h3>Font</h3>
+      <div class="font">
+        <h3>Lato</h3>
+        <h4>Sans-serif</h4>
+      </div><hr>
+    </section>
+
+    <!-- Basic branding ideas-->
+    <section>
+      <h3>Branding Ideas</h3>
+      <div class="branding">
+        <h4>What does the company do, or offer?</h4>
+        <p>The main focus of the company is to bring the world minimal but unique designs of home decorations made from sustainable materials. The most popular products are indoor planters that grow in modern pots and bottles. Having a glance at green can calm your mind and remind you of all the goodness in the world. </p><br>
+        <h4>Who is the company to potential customers? </h4>
+        <p>The company targets young adults who pursue a life of quality, sentiment and style, from age 18 to 35. Since the company promotes sustainable living, the potential consumers can be individuals who care about the wellness of the earth. </p><br>
+        <h4>Why might this company entice someone to purchase a product or service?</h4>
+        <p>The art direction is using a combination of clean colors and minimal design on the UI. The company will attract people to its unique branding idea and asthetic appeals.</p><br>
+        </div> <hr>
+    </section>
+  
+
+        <!-- Potential imagery-->
+    <section>
+      <h3>Potential imagery </h3>
+      <div class="potential-imagery">
+        <img src="./P01 - Style Guide Template_files/plant_in_bottle.jpg" alt="plant_in_bottle" style="width:300px;height:300px">
+        <img src="./P01 - Style Guide Template_files/plant_in_pot.jpg" alt="plant_in_pot" style="width:300px;height:300px">
+        <img src="./P01 - Style Guide Template_files/plant_on_desk.jpg" alt="plant_on_desk" style="width:240px;height:300px">
+      </div>
+    </section>
+  </section>
+
+
+
+      <section id="citations">
+            <h2>Citations</h2>
+
+            <ul>
+              <li>Łukasz Dziedzic. Designer. 2010. <strong>Lato [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Lato">https://fonts.google.com/specimen/Lato</a></li>
+              <li>w3schools. Website. n.d. <strong>Checkout cart [Website]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form</a>.</li>
+              <li>Pinterest. Website. n.d. <strong>Two tone planter [Image]</strong>. Retrieved from <a href="https://www.pinterest.com/pin/628392954235464688/">https://www.pinterest.com/pin/628392954235464688/</a>.</li>
+              <li>Pinterest. Website. n.d. <strong>Desk [Image]</strong>. Retrieved from <a href="https://www.pinterest.com/pin/540291286548285804/">https://www.pinterest.com/pin/540291286548285804/</a>.</li>
+              <li>Pinterest. Website. n.d. <strong>Indoor wood plant [Image]</strong>. Retrieved from <a href="https://www.pinterest.com/pin/815573813761960512/">https://www.pinterest.com/pin/815573813761960512/</a>.</li>
+              <li>Pinterest. Website. n.d. <strong>Bottle planter [Image]</strong>. Retrieved from <a href="https://i.pinimg.com/564x/ad/07/1d/ad071d7d6c172c8aafb2be9f46003244.jpg">https://i.pinimg.com/564x/ad/07/1d/ad071d7d6c172c8aafb2be9f46003244.jpg</a>.</li>
+
+            </ul><hr>
+        </section>
+      
+      
+</body></html>

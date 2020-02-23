@@ -4,7 +4,7 @@
 */
 body {
   font-family: 'Lato', sans-serif;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #F8F7F2;
 }
 
@@ -42,18 +42,253 @@ nav a{
 nav a:hover, nav a:focus {
   color:#B1BC9E;
 }
+ nav a:after{
+    content:"";
+    display:block;
+    background-color:gray;
+    height:2px;
+    transform: scale(0);
+    transform-origin:left;
+    transition: all 1s;
+  }
+
+  nav a:hover:after{
+    transform: scale(1);
+  }
+  .icon{
+    width:8%;
+  }
+  .menu{
+    display:none;
+  } 
+  @media screen and (max-width:600px){
+    .menu{
+
+      display:block;
+    }
+
+    nav{
+      display:none;
+    }
+    nav a{
+      display:block;
+    }
+  }
+  .head_icon{
+   
+    width:100%;
+    display:relative;
+  }
+  
+  .head_icon img{
+
+    margin-left: 2rem;
+    float:right;
+    width:40px;
+    transition:all 0.3s;
+  }
+  .head_icon img:hover{
+    opacity: 0.5;
+    
+  }
+  .icon_4{
+    display:absolute;
+    max-width: 50px;
+   
+  }
+  /*.......................................................................................*/
+  .main{
+   float:right;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  }
+  .main_left{
+  flex-basis: 40%;
+  margin: 2rem;
+   
+   transition:all 1s;
+   padding-bottom: 1rem;
+
+  }
+  .main_left img{
+   z-index: 0;
+    width:800px;
+ 
+  }
+  .main_word1{
+    z-index: 1;
+    margin-left: 100px;
+    margin-top: 200px;
+
+position: absolute;
+    
+  }
+  
+  .main_right{
+    padding-left:100px;
+    flex-basis: 20%;
+  margin: 0.5rem;
+  
+   transition:all 1s;
+   padding-bottom: 1rem;
+ 
+  }
+  .main_right img{
+    margin-top: 200px;
+    margin-left: -50px;
+
+     width:400px;
+  }
+  .main_word2{
+    z-index: 2;
+    margin-left: -100px;
+    margin-top: 250px;
+
+position: absolute;
+    
+  }
+/*...........................................................................................*/
+ .second{
+   float:right;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  }
+  .second_left{
+  flex-basis: 20%;
+  margin: 2rem;
+   
+   transition:all 1s;
+   padding-bottom: 1rem;
+
+  }
+  .second_left img{
+   z-index: 0;
+    width:500px;
+
+
+   
+   
+  }
+  .second_word1{
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 400px;
+
+position: absolute;
+    
+  }
+  
+  .second_right{
+    padding-left:100px;
+    flex-basis: 40%;
+  margin: 0.5rem;
+  
+   transition:all 1s;
+   padding-bottom: 1rem;
+   margin-bottom: 100px;
+   
+  }
+  .second_right img{
+    margin-top: 50px;
+    margin-left: -50px;
+
+
+     width:600px;
+  }
+  .second_word2{
+    z-index: 2;
+    margin-left: 150px;
+    margin-top: 500px;
+
+position: absolute;
+    
+  }
+  /*...........................................................................................*/
+ 
+  @media only screen and (max-width: 600px){
+  .main{
+    flex-direction: column;
+  }
+  .second{
+    flex-direction: column;
+  }
+
+}
+.main h2{
+  text-align: center;
+  text-decoration: underline;
+
+}
+.second h2{
+  text-align: center;
+  text-decoration: underline;
+
+}
+.main h3{
+  text-align: center;
+}
+.second h3{
+  text-align: center;
+}
+
+.main h1:hover{
+  color:#bbb;
+
+}
+.second h1:hover{
+  color:#bbb;
+
+}
+.main a{
+  color:black;
+}
+.second a{
+  color:black;
+}
+
+.third {
+  margin-top: 10rem;
+  display:flex;
+justify-content: center;
+ 
+  width:100%;
+
+
+}
+.third p{
+  font-weight: 20px;
+
+   justify-content: center;
+  display:inline;
+  margin: 2rem;
+}
+
+
+
+   
 h1{
+  text-align: center;
+   transition:all 0.5s;
   font-size: 50px;
 }
 h2 {
-  margin-top: 6rem;
+  
   font-weight: bold;
 }
 
 h3 {
+  font-size:20px;
   font-weight: bold;
   margin-top: 1rem;
   color: #6d7d8c;
+}
+h4{
+  font-weight: bold;
 }
 
 p {
@@ -72,6 +307,17 @@ code {
 */
 
 /*Styling for in-text link*/
+.First_Line h4{
+  display:inline;
+}
+.First_Line :after{
+  content: "        |        ";
+}
+.First_Line{
+   margin-bottom: 1rem;
+
+}
+
 .in-text-link{
   color: #9e8b7d;
   text-decoration:none;
