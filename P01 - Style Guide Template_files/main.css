@@ -61,7 +61,7 @@ nav a:hover, nav a:focus {
   .menu{
     display:none;
   } 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:734px){
     .menu{
 
       display:block;
@@ -114,21 +114,25 @@ nav a:hover, nav a:focus {
 
   }
   .main_left img{
+    position: relative;
+    margin-top: -30%
    z-index: 0;
-    width:800px;
+    width:600px;
  
   }
   .main_word1{
+    position: relative;
     z-index: 1;
-    margin-left: 100px;
-    margin-top: 200px;
+    margin-left: 40%;
+    margin-bottom: -40%;
+    margin-top: 20%;
 
-position: absolute;
+
     
   }
   
   .main_right{
-    padding-left:100px;
+ padding-left: 5%;
     flex-basis: 20%;
   margin: 0.5rem;
   
@@ -137,17 +141,18 @@ position: absolute;
  
   }
   .main_right img{
-    margin-top: 200px;
-    margin-left: -50px;
+    margin-top: 0;
+    margin-left: -10%;
 
      width:400px;
   }
   .main_word2{
     z-index: 2;
-    margin-left: -100px;
-    margin-top: 250px;
+   margin-left: -35%;
+    margin-top: 80%;
+    margin-bottom: -30%;
 
-position: absolute;
+position: relative;
     
   }
 
@@ -178,38 +183,44 @@ position: absolute;
 
 /*...........................................................................................*/
  .second{
+  
    float:right;
   display:flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 2rem;
   }
+  
 
   .second_left{
+
+     
   flex-basis: 20%;
   margin: 2rem;
    
    transition:all 1s;
-   padding-bottom: 1rem;
+   padding: 2rem;
 
   }
 
   .second_left img{
+  position: relative;
+    margin-top: -30%
    z-index: 0;
-    width:500px; 
+    width:600px;
   }
 
   .second_word1{
+  position: relative;
     z-index: 1;
-    margin-left: 0px;
-    margin-top: 400px;
-
-position: absolute;
-    
+    margin-left: 60%;
+    margin-bottom: -40%;
+    margin-top: 20%;
   }
   
   .second_right{
-    padding-left:100px;
+    
+  
     flex-basis: 40%;
   margin: 0.5rem;
   
@@ -219,29 +230,100 @@ position: absolute;
    
   }
   .second_right img{
+   overflow: hidden;
     margin-top: 50px;
-    margin-left: -50px;
+   
 
 
-     width:600px;
+     width:500px;
   }
+
   .second_word2{
     z-index: 2;
-    margin-left: 150px;
-    margin-top: 500px;
+    
+    margin-top: 100px;
+    margin-bottom: -25%;
+    margin-left: -45%;
 
-position: absolute;
+position: relative;
     
   }
   /*...........................................................................................*/
  
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 734px){
   .main{
+     
     flex-direction: column;
   }
   .second{
     flex-direction: column;
   }
+  .main_left{
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .main_left img{
+     
+    width:100%;
+  }
+  .main_right img{
+    
+    padding: 0;
+    margin: 0;
+    
+    width:100%;}
+  .main_word1 {
+
+    margin: 30% 0 -60% 0;
+  }
+   .main_left img{width:100%;}
+
+.main_right{
+  margin: 0;
+    padding: 0;
+
+}
+  .main_word2{
+    
+    margin: 20% 0 -60% 0;
+
+  }
+
+
+/*..........................*/
+.second_left{
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .second_left img{
+    
+    width:100%;
+  }
+  .second_right img{
+   
+    padding: 0;
+    margin: 0;
+    
+    width:100%;}
+  .second_word1 {
+
+    margin: 20% 0 -60% 0;
+  }
+   .second_left img{width:100%;}
+
+.second_right{
+  margin: 0;
+    padding: 0;
+
+}
+  .second_word2{
+    
+    margin: 20% 0 -60% 0;
+
+  }
+
 
 }
 .main h2{
@@ -292,7 +374,15 @@ justify-content: center;
   display:inline;
   margin: 2rem;
 }
+.content{
+  text-align: center；
+  margin:2rem;
+}
+textarea{
+  width:100%;
+  height:200px;
 
+}
 
 
    
@@ -618,7 +708,7 @@ white-space: nowrap;
   text-decoration: none;
   color:black;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 734px){
   .list h1{
   font-size: 8px;
   }
@@ -721,7 +811,7 @@ white-space: nowrap;
   margin:0.4rem 0;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 734px){
   .grid{
     flex-direction: column;
   }
@@ -840,5 +930,50 @@ white-space: nowrap;
   color: #919c7e;
   font-style: italic;
 }
+
+/*--------------------------detail page
+*/
+.cart-btn {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #FFF;
+  background-color: #8f997f;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+.cart-btn:hover {
+  background-color: #B2BD9F;
+}
+
+/*--------------------------contact page
+*/
+.contact{
+  text-align: center;
+  border:solid 2px red;
+
+ 
+}
+.contact_img img{
+  transition:all 1s;
+
+}
+.contact_img img:hover{
+  transform:scale(1.2);
+}
+.contact_img{
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
 
 
