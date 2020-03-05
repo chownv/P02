@@ -61,7 +61,7 @@ nav a:hover, nav a:focus {
   .menu{
     display:none;
   } 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:734px){
     .menu{
 
       display:block;
@@ -708,7 +708,7 @@ white-space: nowrap;
   text-decoration: none;
   color:black;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 734px){
   .list h1{
   font-size: 8px;
   }
@@ -811,7 +811,7 @@ white-space: nowrap;
   margin:0.4rem 0;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 734px){
   .grid{
     flex-direction: column;
   }
@@ -947,5 +947,33 @@ white-space: nowrap;
 .cart-btn:hover {
   background-color: #B2BD9F;
 }
+
+/*--------------------------contact page
+*/
+.contact{
+  text-align: center;
+  border:solid 2px red;
+
+ 
+}
+.contact_img img{
+  transition:all 1s;
+
+}
+.contact_img img:hover{
+  transform:scale(1.2);
+}
+.contact_img{
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
 
 
