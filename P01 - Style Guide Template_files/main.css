@@ -78,6 +78,7 @@ nav a:hover, nav a:focus {
    
     width:100%;
     display:relative;
+    margin-bottom: 5%;
   }
   
   .head_icon img{
@@ -155,21 +156,49 @@ nav a:hover, nav a:focus {
 position: relative;
     
   }
+  .about{
+    margin-top: 10%;
 
+     border: solid 2px red;
+   float:center;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  
+  }
   .about_img{
-    padding-left:0px;
-    margin-top: -250px;
-    position: relative;
+   flex-basis: 70%;
+  
+   
+   transition:all 1s;
+   padding-bottom: 1rem;
+
+  }
+
+  .about_img img{
+    width: 100%;
+    border: solid 2px red;
+     
+    
+    
+   
   }
 
   .about_text{
-/*    z-index: 1;*/
-    padding-left: 1000px;
-    margin-top: 100px;
-    padding-top: 200px;
-    position: relative;
-    width: 400px;
+    padding-left:2%; 
+    width: 100%;
+    
+    
+    flex-basis: 60%;
+    
+    border: solid 2px red;
+    
+
     white-space: normal;
+
+  }
+  .about_text h2 h3 p{
+    text-align: right;
 
   }
 
