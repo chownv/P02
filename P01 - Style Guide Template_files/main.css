@@ -665,7 +665,7 @@ white-space: nowrap;
 
 }
 .list h1{
-  display:flex;
+  
    text-align: center;
   font-family: "Lato";
   font-size: 30px;
@@ -678,44 +678,59 @@ white-space: nowrap;
 }
 .list h2{
   display:flex;
-  text-align: center;
+  text-align:left;
   
   
   font-family: "Lato";
   font-size: 24px;
   font-weight: lighter;
-  margin:1rem 0;
+  margin:0.4rem 0;
   border-bottom-width:5px;
   border-bottom-style: solid;
   border-bottom-color:#F8F7F2;
   transition:all 1s ;
   
 
- overflow:hidden;
+ white-space: normal;
 
 }
 
-.list h2:hover{
-   display:flex;
-   text-align: center;
-  
-  border-bottom-width:5px;
-  border-bottom-style: solid;
-  border-bottom-color:#5F6973;
-}
+
 .list a{
 
   text-decoration: none;
   color:black;
 }
+.list a:after{
+    content:"";
+    display:block;
+    background-color:gray;
+    height:2px;
+    transform: scale(0);
+    transform-origin:left;
+    transition: all 1s;
+  }
+
+  .list a:hover:after{
+    transform: scale(1);
+  }
 @media only screen and (max-width: 734px){
   .list h1{
+text-align: center;
   font-size: 8px;
   }
   .list h2{
+    border:solid 2px red;
+   text-align: left;
+    white-space: pre-line;
+   
   font-size: 6px;
-  
-  overflow: visible;
+ 
+  }
+  .list{
+    border:solid 2px red;
+    margin: 0;
+    padding: 0;
   }
 
 
