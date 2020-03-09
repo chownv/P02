@@ -914,6 +914,11 @@ text-align: center;
   border-radius: 0.2em;
   display: flex;
   box-shadow: 3px 3px 3px #B1BC9E; 
+  width: 30%;
+  height: 30%;
+  background-color: #E5E7DA;
+
+
 }
 
 .cart-left {
@@ -1054,6 +1059,34 @@ text-align: center;
   justify-content: space-between;
 }
 
+label{
+  font-family: 'Lato', sans-serif;
+}
+
+.checkout{
+  display: flex;
+ /* justify-content: space-between;*/
+  padding: 2rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
+}
+
+.address {
+  background-color: #ffffff;
+  padding: 5px 20px 20px 20px;
+  border: 1.5px solid #E5E7DA;
+  border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
+  width: 41%;
+  box-shadow: 3px 3px 3px #B1BC9E; 
+  margin-right: 4rem;
+}
+
+.continue {
+  margin-left: 1040px;
+  margin-top: -200px;
+}
 
 
 
