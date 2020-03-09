@@ -9,6 +9,19 @@
     <link href="./P01 - Style Guide Template_files/main.css" rel="stylesheet">
     <link href="./P01 - Style Guide Template_files/css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    window.onload=function(){
+        var display_area = document.getElementById("display_area");
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            var content_val = document.getElementById("content").value;
+            display_area.append(content_val);
+        };
+        btn.onclick= function(){alert("Thank You！");}
+
+
+    }
+    </script>
      </head>
      
      <div class="First_Line">
@@ -36,27 +49,33 @@
  
     </nav>
 
-
-    <div class="contact_form">
+    <div class="contact">
+    <div class="contact_form_left">
+      <h3>Feel free to contact us if you have  any question or special queries !</h3>
   <label class = "fullname"> Name </label>
-  <input type = "text" name ="fullname" placeholder="Name e.g. John Smith">
+  <input type = "text" name ="fullname" placeholder="e.g. John Smith"style="width: 250px;">
 
+<label class = "email"> Email address </label>
+  <input type = "text" name ="email" placeholder="e.g. johnsmith@gmail.com" style="width: 250px;">
 
 <label class = "contry"> Country </label>
-    <select id="country" name="country">
+    <select id="country" name="country" style="width: 250px;">
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
       <option value = "China"> China </option>
     </select><br>
 
-<label class = "subject"> Subject </label>
-<textarea id = "text" name = "subject" placeholder="Write something"></textarea><br>
+<label class = "concern"> Your demand concerns </label>
+  <input type = "text" name ="concern" placeholder="Order number" style="width: 250px;">
 
- <a class="btn-submit">Submit</a>
+<label class = "subject"> Your message </label>
+<input type = "text" name = "subject" placeholder="Write something" style="width: 700px; height: 180px"><br>
+<input value="submit"  type="button" id="btn" class="btn-submit">
 </div>  
 
-    <div class="contact"> 
- <h1>Contact us</h1>
+    <div class="contact_right"> 
+ <h3>You can also find us at</h3>
+ <h4>13450 102 Ave, Surrey, BC V3T 0A3</h4>
     <div class="contact_main ">
 <div class="contact_img">
     <img src="./img/map.png">
@@ -64,11 +83,12 @@
     
 
     <br>
-      <h2>Tel:892-342-4456 </h2>
-      <h2>Email:GreenU@gmail.com </h2>
+      <h4>Tel:604-342-4456  |  Email:GreenU@gmail.com</h4>
+     
           
        </div>
      </div>
+    </div>
        <div class="third">
     <p>FREE SHIPPING</p>
     <p>EASY RETURNS</p>
