@@ -8,6 +8,18 @@
     <link href="./P01 - Style Guide Template_files/main.css" rel="stylesheet">
     <link href="./P01 - Style Guide Template_files/css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+       <script>
+    window.onload=function(){
+        var display_area = document.getElementById("display_area");
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            var content_val = document.getElementById("content").value;
+            display_area.append(content_val);
+        };
+        btn.onclick= function(){alert("Thank you for you purchase!");}
+    }
+    </script>
      </head>
      
      <div class="First_Line">
@@ -46,7 +58,7 @@ function displayMenu() {
 
   <div class="payment"> 
           <div class="payment-form1">
-            <input id="payment_form1" type="radio" name="card" value="debit">Debit card
+            <input id="payment_form1" type="radio" name="card" value="debit" >Debit card
           </div>
           <div class="payment-form1">
             <input id="payment_form2" type="radio" name="card" value="master">Master card
@@ -57,14 +69,18 @@ function displayMenu() {
 
 
          <label class="pay-label">Name on card</label>
-         <input type="text" name="username"><br>
+         <input type="text" name="username" ><br>
          <label class="pay-label">Card number</label>
          <input type="text" name="username"><br>
          <label class="pay-label">Exp Month/ Year</label>
          <input type="text" name="username"><br>
          <label class="pay-label">CVV</label>
          <input type="text" name="username"><br>
-         <a class="confirm">Confirm</a>
+
+          <input type="checkbox" id="check_add" name="billing_add" value="billing">
+  <label for="check_add"> Billing address same as shipping </label><br>
+
+         <input value="submit"  type="button" id="btn" class="btn-submit">
        </div>
 
   <div class="third">
