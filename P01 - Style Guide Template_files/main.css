@@ -26,8 +26,9 @@ nav {
   background-color: #E0E5DE;
   text-decoration: none;
   border-radius: 0.25em;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 20px
+
 
 }
 
@@ -37,6 +38,7 @@ nav a{
   text-decoration: none;
   color:#5F6973;
   transition:color 0.5s;
+
 }
 
 nav a:hover, nav a:focus {
@@ -97,6 +99,7 @@ b    display:block;
     max-width: 50px;
    
   }
+  
   /*.......................................................................................*/
   .main{
    float:right;
@@ -142,7 +145,7 @@ b    display:block;
   .main_right img{
     margin-top: 0;
     margin-left: -10%;
-
+z-index: 1;
      width:400px;
   }
 
@@ -1057,6 +1060,15 @@ text-align: center;
 .contact{
   display:flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 734px){
+  .contact{
+    flex-direction: column;
+  }
+  .contact_form_left{
+    width:90%;
+  }
+
 }
 
 label{
