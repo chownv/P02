@@ -697,10 +697,11 @@ label {
 */
 
 .list{
+  max-width: 300px;
   position: fixed;
 
   width:24%;
-  height:52%;
+  
   padding-left: 1rem;
 border-left-style:solid; 
 border-left-color:#bbb;
@@ -709,8 +710,8 @@ white-space: nowrap;
 
 }
 .list h1{
-  
-   text-align: center;
+  display: flex;
+
   font-family: "Lato";
   font-size: 30px;
   font-weight: bold;
@@ -729,9 +730,7 @@ white-space: nowrap;
   font-size: 24px;
   font-weight: lighter;
   margin:0.4rem 0;
-  border-bottom-width:5px;
-  border-bottom-style: solid;
-  border-bottom-color:#F8F7F2;
+
   transition:all 1s ;
   
 
@@ -764,7 +763,7 @@ text-align: center;
   font-size: 8px;
   }
   .list h2{
-    border:solid 2px red;
+   
    text-align: left;
     white-space: pre-line;
    
@@ -772,9 +771,10 @@ text-align: center;
  
   }
   .list{
-    border:solid 2px red;
+   border-left: 0;
+    
     margin: 0;
-    padding: 0;
+    padding-left: 0.2rem;
   }
 
 
@@ -895,43 +895,25 @@ text-align: center;
 }
 
 .payment input{
-  width:100%;
+  
 }
 
 .payment-form1 input{
+  
   width: 30px;
 }
 
 .pay-label {
   font-size: 16px;
 }
-
-/*
-  Checkout cart-----------------
-*/
-
-.cart-item {
-  background-color: #ffffff;
-  padding: 5px 20px 15px 20px;
-  border: 1.5px solid #E5E7DA;
-  border-radius: 0.2em;
-  display: flex;
-  box-shadow: 3px 3px 3px #B1BC9E; 
-  width: 30%;
-  height: 30%;
-  background-color: #E5E7DA;
-
+@media only screen and (max-width: 734px){
+  .payment{
+    flex-direction: column;
+  }
 
 }
 
-.cart-left {
-  flex: 80%;
-}
 
-
-.cart-right {
-  flex: 10%;
-}
 
 /*
   ART DIRECTION-----------------
@@ -1090,14 +1072,58 @@ label{
   border-radius: 0.2em;
   display: flex;
   flex-direction: column;
-  width: 41%;
+  width: 90%;
   box-shadow: 3px 3px 3px #B1BC9E; 
   margin-right: 4rem;
 }
 
+
+/*
+  Checkout cart-----------------
+*/
+
+.cart-item {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  border: 1.5px solid #E5E7DA;
+  border-radius: 0.2em;
+  display: flex;
+  box-shadow: 3px 3px 3px #B1BC9E; 
+  width: 90%;
+  height: 30%;
+  background-color: #E5E7DA;
+  max-width: 700px;
+border: solid 2px red;
+
+}
+
+.cart-left {
+  flex: 80%;
+}
+
+
+.cart-right {
+  flex: 20%;
+}
+.cart{
+
+}
 .continue {
-  margin-left: 1040px;
-  margin-top: -200px;
+  display: relative;
+  width: 30%;
+  
+}
+@media only screen and (max-width: 734px){
+  .checkout{
+    flex-direction:column;
+  }
+  .cart{
+    width: 90%;
+  }
+  .continue{
+    text-align: center;
+  }
+
 }
 
 
