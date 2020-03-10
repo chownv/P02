@@ -6,6 +6,7 @@ body {
   font-family: 'Lato', sans-serif;
   padding: 1rem;
   background-color: white;
+
 }
 
 
@@ -95,6 +96,7 @@ b    display:block;
     
   }
   .icon_4{
+
     display:absolute;
     max-width: 50px;
    
@@ -102,14 +104,40 @@ b    display:block;
   
   /*.......................................................................................*/
   .main{
+    
+ background-image:url('./img/circle_background.png');
+    background-repeat: no-repeat;
    float:right;
   display:flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 2rem;
 
+
   }
+  .back_ground_img{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    position: fixed;
+     background-image:url('./img/circle_background.png');
+    background-repeat: no-repeat;
+
+
+  }
+  .main img{
+    opacity: 80%;
+    transition: all 0.3s;
+  }
+  
+  .main img:hover{
+    opacity: 100%;
+    border-radius: 80px;
+  }
+   
   .main_left{
+
   flex-basis: 40%;
   margin: 2rem;
    
@@ -160,6 +188,7 @@ z-index: 1;
 
 
   .about{
+
     margin-top: 10%;
 
      border: solid 2px red;
@@ -234,6 +263,16 @@ z-index: 1;
   width: 100%;
   margin-bottom: 2rem;
   }
+   .second img{
+    opacity: 80%;
+    transition: all 0.3s;
+  }
+  
+  .second img:hover{
+    opacity: 100%;
+    border-radius: 80px;
+  }
+   
   
 
   .second_left{
@@ -317,6 +356,7 @@ position: relative;
     margin: 0;
     
     width:100%;}
+
   .main_word1 {
 
     margin: 30% 0 -60% 0;
@@ -391,6 +431,7 @@ position: relative;
   color:#bbb;
 
 }
+
 .second h1:hover{
   color:#bbb;
 
@@ -412,12 +453,44 @@ justify-content: center;
 
 }
 .third p{
-  font-weight: 20px;
+  font-size: 1.5rem;
 
    justify-content: center;
   display:inline;
   margin: 2rem;
+  transition:all 1s;
 }
+.third p:hover{
+  color:#5F6973;
+
+}
+.third p:after{
+    content:"";
+    display:block;
+    background-color:gray;
+    height:2px;
+    transform: scale(0);
+    transform-origin:left;
+    transition: all 1s;
+  }
+  .third p:before{
+     content:"";
+    display:block;
+    background-color:gray;
+    height:2px;
+    transform: scale(0);
+    transform-origin:right;
+    transition: all 1s;
+
+  }
+
+  .third p:hover:after{
+    transform: scale(1);
+  }
+  .third p:hover:before{
+    transform: scale(1);
+
+  }
 .content{
   text-align: center；
   margin:2rem;
