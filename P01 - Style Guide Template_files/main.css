@@ -2,6 +2,7 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 body {
   font-family: 'Lato', sans-serif;
   padding: 1rem;
@@ -59,7 +60,7 @@ b    display:block;
     transform: scale(1);
   }
   .icon{
-    width:8%;
+    width:40px;
   }
   .menu{
     display:none;
@@ -561,7 +562,8 @@ code {
   content: "        |        ";
 }
 .First_Line{
-   margin-bottom: 1rem;
+
+   margin: 2rem 0;
 
 }
 
