@@ -78,7 +78,7 @@ b    display:block;
     }
   }
   .head_icon{
-   margin-top: -3rem;
+   
     width:100%;
     display:relative;
     margin-bottom: 5%;
@@ -100,6 +100,13 @@ b    display:block;
     display:absolute;
     max-width: 50px;
    
+  }
+  @media only screen and (max-width: 734px){
+    .head_icon{
+      margin-top: -2.5rem;
+
+    }
+
   }
   
   /*...............home page........................................................................*/
@@ -1140,10 +1147,15 @@ label{
 
 .checkout{
   display: flex;
- /* justify-content: space-between;*/
-  padding: 2rem;
+ justify-content: center;
+  /*padding: 2rem;
   margin-left: 4rem;
-  margin-right: 2rem;
+  margin-right: 2rem;*/
+}
+
+.checkout>div{
+  margin-top:2em;
+
 }
 
 .address {
@@ -1153,9 +1165,13 @@ label{
   border-radius: 0.2em;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  flex-basis: 50%;
   box-shadow: 3px 3px 3px #B1BC9E; 
   margin-right: 4rem;
+}
+
+.cart-item{
+  flex-basis: 30%;
 }
 
 
@@ -1163,23 +1179,30 @@ label{
   Checkout cart-----------------
 */
 
-.cart-item {
+.cart-item>div{
+  
+   display:flex;
+  justify-content: space-around;
+
+}
+
+.cart-item>div:nth-of-type(1){
   background-color: #ffffff;
   padding: 5px 20px 15px 20px;
   border: 1.5px solid #E5E7DA;
   border-radius: 0.2em;
-  display: flex;
+  /*display: flex;*/
   box-shadow: 3px 3px 3px #B1BC9E; 
-  width: 90%;
-  height: 30%;
+  /*width: 90%;
+  height: 30%;*/
   background-color: #E5E7DA;
-  max-width: 700px;
-border: solid 2px red;
-
 }
 
 .cart-left {
   flex: 80%;
+  
+
+  
 }
 
 
@@ -1190,7 +1213,7 @@ border: solid 2px red;
 
 }
 .continue {
-  display: relative;
+  /*display: relative;*/
   width: 30%;
   
 }
