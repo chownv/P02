@@ -78,7 +78,7 @@ b    display:block;
     }
   }
   .head_icon{
-   
+   margin-top: -3rem;
     width:100%;
     display:relative;
     margin-bottom: 5%;
@@ -102,7 +102,7 @@ b    display:block;
    
   }
   
-  /*.......................................................................................*/
+  /*...............home page........................................................................*/
   .main{
     
  background-image:url('./img/circle_background.png');
@@ -341,17 +341,24 @@ position: relative;
   .second{
     flex-direction: column;
   }
+  .third{
+    flex-direction:column;
+    font-size:20px;
+    text-align: center;
+
+  }
   .main_left{
     flex-basis: 50%;
     margin: 0;
     padding: 0;
   }
   .main_left img{
+    margin-bottom: 2rem;
      
     width:100%;
   }
   .main_right img{
-    
+    margin-bottom: 11rem;
     padding: 0;
     margin: 0;
     
@@ -361,7 +368,7 @@ position: relative;
 
     margin: 30% 0 -60% 0;
   }
-   .main_left img{width:100%;}
+  
 
 .main_right{
   margin: 0;
@@ -382,7 +389,8 @@ position: relative;
     padding: 0;
   }
   .second_left img{
-    
+    margin-bottom: 2rem;
+   
     width:100%;
   }
   .second_right img{
