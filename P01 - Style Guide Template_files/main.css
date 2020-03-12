@@ -375,6 +375,76 @@ z-index: 1;
   }
 }
 
+/*...........event.............*/
+
+
+ .event{
+
+   
+margin-top: 2rem;
+     border: solid 2px red;
+   float:center;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  
+  }
+  .event_img{
+   flex-basis: 70%;
+  
+   
+   transition:all 1s;
+   padding-bottom: 1rem;
+
+  }
+
+  .event_img img{
+    width: 100%;
+    border: solid 2px red;
+     
+    
+    
+   
+  }
+
+  .event_text{
+    padding-left:2%; 
+    width: 100%;
+    
+    
+    flex-basis: 60%;
+    
+    border: solid 2px red;
+    
+
+    white-space: normal;
+
+  }
+  .event_text h2 h3 p{
+    text-align: right;
+
+  }
+
+
+
+/*  .about_text>p {
+    padding-left: 150px;
+  }*/
+
+@media only screen and (max-width: 734px){
+
+  .event {
+  flex-direction: column;
+  }
+
+  .event_img {
+    padding: 0;
+    margin: 0;  
+    width:100%;
+
+  }
+}
+
 /*...........................................................................................*/
  .second{
   
