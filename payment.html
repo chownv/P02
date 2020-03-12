@@ -4,112 +4,114 @@
 <head>
   <title>payment_page</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- 
+  
 
-   <link href="./main.css" rel="stylesheet">
-    <link href="./css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="./main.css" rel="stylesheet">
+  <link href="./css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-       <script>
-    window.onload=function(){
-        var display_area = document.getElementById("display_area");
-        var btn = document.getElementById("btn");
-        btn.onclick = function(){
-            var content_val = document.getElementById("content").value;
-            display_area.append(content_val);
-        };
-        btn.onclick= function(){alert("Thank you for you purchase!");}
-    }
-    </script>
-     </head>
-     
-     
- <script>
-
-function displayMenu() {
-  var x = document.getElementById("guide");
-  if (x.style.display == ""){
-    x.style.display = "block"
-  }else{
-    x.style.display = ""
+  <script>
+  window.onload=function(){
+    var display_area = document.getElementById("display_area");
+    var btn = document.getElementById("btn");
+    btn.onclick = function(){
+      var content_val = document.getElementById("content").value;
+      display_area.append(content_val);
+    };
+    btn.onclick= function(){alert("Thank you for you purchase!");}
   }
- 
-}
-</script>
-<div class="First_Line">
-<h4>WORLDWIDE FREE SHIPPING over $50</h4>
-<h4>MADE IN CANADA</h4>
+  </script>
+  <script>
 
-</div>
-<div class="head_icon">
-  <a href=""><img class="icon_4"src="./img/search.png" alt="search_icon"></a>
-  <a href="detail.html"><img class="icon_4"src="./img/like.png"alt="like_icon"></a>
-  <a href="contact.html"><img class="icon_4"src="./img/account.png"alt="contact_icon"></a>
-  <a href="checkout.html"><img class="icon_4"src="./img/bag.png"alt="checkout_icon"></a>
-</div>
-<div class="menu">
+  function displayMenu() {
+    var x = document.getElementById("guide");
+    if (x.style.display == ""){
+      x.style.display = "block"
+    }else{
+      x.style.display = ""
+    }
+    
+  }
+  </script>
+</head>
+
+
+
+<body>
+  <div class="First_Line">
+    <h4>WORLDWIDE FREE SHIPPING over $50</h4>
+    <h4>MADE IN CANADA</h4>
+
+  </div>
+  <div class="head_icon">
+    <a href=""><img class="icon_4" src="./img/search.png" alt="search_icon"></a>
+    <a href="detail.html"><img class="icon_4" src="./img/like.png" alt="like_icon"></a>
+    <a href="contact.html"><img class="icon_4" src="./img/account.png" alt="contact_icon"></a>
+    <a href="checkout.html"><img class="icon_4" src="./img/bag.png" alt="checkout_icon"></a>
+  </div>
+  <div class="menu">
     <a href="javascript:void(0);" onclick="displayMenu()">
       <img class="icon" src="./img/menu.png" alt="menu">
     </a>
   </div>
 
-     <body>
-<div class="header">
-  <div class="logo">
-    <img src="./img/urban_planter_logo.png">
-  </div >
-      <nav id="guide"> 
+  
+  <div class="header">
+    <div class="logo">
+      <img src="./img/urban_planter_logo.png" alt="logo">
+    </div >
+    <nav id="guide"> 
 
      <a href="home.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="index.html">PRODUCT</a>
-      <a href="checkout.html">CHECKOUT</a>
-      <a href="contact.html">CONTACT</a>
+     <a href="about.html">ABOUT</a>
+     <a href="index.html">PRODUCT</a>
+     <a href="checkout.html">CHECKOUT</a>
+     <a href="contact.html">CONTACT</a>
+     
+   </nav>
+
+ </div>
  
-    </nav>
 
+ <div class="payment"> 
+  <div class="payment-form1">
+    <input id="payment_form1" type="radio" name="card" value="debit" >Debit card
   </div>
-    
-
-  <div class="payment"> 
-          <div class="payment-form1">
-            <input id="payment_form1" type="radio" name="card" value="debit" >Debit card
-          </div>
-          <div class="payment-form1">
-            <input id="payment_form2" type="radio" name="card" value="master">Master card
-          </div>
-          <div class="payment-form1">
-           <input id="payment_form3" type="radio" name="card" value="visa">Visa card
-         </div><br>
-
-
-         <label class="pay-label">Name on card</label>
-         <input type="text" name="username" style="width:90%"><br>
-         <label class="pay-label">Card number</label>
-         <input type="text" name="username"style="width:90%"><br>
-         <label class="pay-label">Exp Month/ Year</label>
-         <input type="text" name="username"style="width:90%"><br>
-         <label class="pay-label">CVV</label>
-         <input type="text" name="username"style="width:90%"><br>
-
-          <input type="checkbox" id="check_add" name="billing_add" value="billing">
-  <label for="check_add"> Billing address same as shipping </label><br>
-
-         <input value="submit"  type="button" id="btn" class="btn-submit">
-       </div>
-
-  <div class="third">
-    <p>FREE SHIPPING</p>
-    <p>EASY RETURNS</p>
-    <p>100% SECURE</p>
-    <p>BEST PRICE</p>
+  <div class="payment-form1">
+    <input id="payment_form2" type="radio" name="card" value="master">Master card
   </div>
-  <div class="footer">
-     <h3>Designer: Richard Xu 301326367  Doris Huang 301251747</h3>
+  <div class="payment-form1">
+   <input id="payment_form3" type="radio" name="card" value="visa">Visa card
+ </div><br>
 
-     <a href="./P1-Style_Guide_Template/index.html"><h3>Style Guide</h3></a>
-     <a href="https://github.com/chownv/P02"><h3>Github Link</h3></a>
-    </div>
-  
 
-     </html>
+ <label class="pay-label">Name on card</label>
+ <input type="text" name="username" style="width:90%"><br>
+ <label class="pay-label">Card number</label>
+ <input type="text" name="username" style="width:90%"><br>
+ <label class="pay-label">Exp Month/ Year</label>
+ <input type="text" name="username" style="width:90%"><br>
+ <label class="pay-label">CVV</label>
+ <input type="text" name="username" style="width:90%"><br>
+
+ <input type="checkbox" id="check_add" name="billing_add" value="billing">
+ <label for="check_add"> Billing address same as shipping </label><br>
+
+ <input value="submit"  type="button" id="btn" class="btn-submit">
+</div>
+
+<div class="third">
+  <p>FREE SHIPPING</p>
+  <p>EASY RETURNS</p>
+  <p>100% SECURE</p>
+  <p>BEST PRICE</p>
+</div>
+<div class="footer">
+ <h3>Designer: Richard Xu 301326367  Doris Huang 301251747</h3>
+
+ <a href="./P1-Style_Guide_Template/index.html"><h3>Style Guide</h3></a>
+ <a href="https://github.com/chownv/P02"><h3>Github Link</h3></a>
+</div>
+
+
+</html>
