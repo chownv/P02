@@ -177,7 +177,7 @@ nav a:hover, nav a:focus {
   .main{
     
     
- background-image:url('./img/circle_background.png');
+
     background-repeat: no-repeat;
    float:right;
   display:flex;
@@ -193,7 +193,6 @@ nav a:hover, nav a:focus {
     height: auto;
     z-index: -1;
     position: fixed;
-     background-image:url('./img/circle_background.png');
     background-repeat: no-repeat;
 
 
@@ -1288,6 +1287,9 @@ flex-basis: 30%;
   border-radius: 0.2em;
  box-shadow: 3px 3px 3px #B1BC9E; 
  background: #E5E7DA;
+ margin-right: 4rem;
+ margin-left:-1rem;
+
  
 }
 
@@ -1321,10 +1323,11 @@ flex-basis: 30%;
   border-radius: 0.2em;
   display: flex;
   flex-direction: column;
-  width: 50%;
+/*  width: 50%;*/
   box-shadow: 3px 3px 3px #B1BC9E; 
   padding-bottom: 40px;
   margin-left:5rem;
+
  
 }
 
