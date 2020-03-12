@@ -47,7 +47,7 @@ nav {
   text-decoration: none;
   border-radius: 0.25em;
  
-  font-size: 18px;
+  
 
 
 }
@@ -107,9 +107,9 @@ nav a:hover, nav a:focus {
       text-align: right;
       margin: 1.3rem;
 
-      display: flex;
+      
       display:none;
-      font-size:16px;
+      
       margin-right: 1.1rem;
     }
     nav a{
@@ -149,7 +149,7 @@ nav a:hover, nav a:focus {
 
     margin-left: 1.5rem;
     flex:right;
-    width:35px;
+    width:30px;
     transition:all 0.3s;
   }
   .head_icon img:hover{
@@ -713,6 +713,7 @@ h3 {
   font-weight: bold;
   margin-top: 1rem;
   color: #6d7d8c;
+  text-decoration: none;
 }
 h4{
   font-weight: bold;
@@ -1555,6 +1556,13 @@ label{
 .cart-btn:hover {
   background-color: #B2BD9F;
 }
+  .footer{
+  
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+ 
 
 @media screen and (max-width:734px){
   main.single-product{
@@ -1572,6 +1580,7 @@ label{
     width:95%;
     margin:auto;
   }
+
 
 
 
