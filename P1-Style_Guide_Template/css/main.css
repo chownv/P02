@@ -1,0 +1,506 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 2rem;
+  background-color: #F8F7F2;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+ .back_ground_img{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    position: fixed;
+     background-image:url('circle_background.png');
+    background-repeat: no-repeat;
+
+
+  }
+
+nav {
+
+  flex-basis:80%;
+  text-align: center;
+  padding-top:1rem;
+  color: #FFF;
+  
+  text-decoration: none;
+  border-radius: 0.25em;
+ 
+  font-size: 18px;
+
+
+}
+
+nav a{
+  justify-content: flex-end;
+ display:inline-block;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  text-decoration: none;
+  color:#5F6973;
+  transition:color 0.5s;
+
+}
+
+nav a:hover, nav a:focus {
+  color:#B1BC9E;
+}
+ nav a:after{
+    content:"";
+   display: block;
+    background-color:gray;
+    height:2px;
+    transform: scale(0);
+    transform-origin:left;
+    transition: all 1s;
+  }
+
+  nav a:hover:after{
+    transform: scale(1);
+  }
+
+h2 {
+  margin-top: 6rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #6d7d8c;
+}
+
+p {
+  margin-bottom: 0em;
+}
+
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*Styling for in-text link*/
+.in-text-link{
+  color: black;
+  text-decoration:none;
+  transition: color 0.1s ease-out;
+  text-shadow:1px 0px 0px #99a5b0;
+}
+
+.in-text-link:hover, .in-text-link:focus {
+  text-decoration:underline;
+
+}
+
+/*Styling for navigation button*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #FFF;
+  background-color: #8f997f;
+  text-decoration: none;
+  border-radius: 0.25em;
+  transition-property: background-color; 
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #B2BD9F;
+}
+
+/*Styling for submition/ reset button*/
+.btn-submit, .btn-reset{ 
+  border-radius:0.25em;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  padding:6px 24px;
+  text-decoration:none;
+  background-color: #5F6973;
+  border-width: 0px;
+}
+
+.btn-submit:hover,.btn-reset:hover {
+  background-color:#a1b5c9;
+}
+
+.btn-submit:hover, .btn-reset:active {
+  position:relative;
+  top:1px;
+}
+
+.select-btn {
+  border: 2px solid #E1E8EE;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5E6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .5s;
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+.select-btn:hover,
+.select-btn:active,
+.select-btn:focus{
+  border: 2px solid #86939E;
+  outline: none;
+}
+
+
+
+/*Styling for radio button*/
+.radio-button{
+  color: #719FDB;
+  font-kerning: 1.1em;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+
+.radio-button:hover {
+  color: #274782;
+  font-weight: bolder;
+}
+
+.radio-button input{
+  width: 30px;
+}
+
+
+/*Styling for text input*/
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 0.15em;
+}
+
+input[type=text]:focus {
+  border: 1px solid #69737D;
+}
+
+label {
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+.confirm{
+  border-radius:0.25em;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  padding:6px 24px;
+  text-decoration:none;
+  background-color: #5F6973;
+  width:50px;
+}
+
+.confirm:hover {
+  background-color:#a1b5c9;
+}
+
+
+/*Styling for image link*/
+.image_link{
+  padding: 40px;
+    width:15%;
+
+  transform:scale(1);
+  transition:transform 1s;
+
+}
+.image_link:hover {
+transform:scale(1.2);
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+/*Headings-------------*/
+.heading1{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.heading2{
+  font-size: 30px;
+}
+
+.heading3{
+  font-size: 25px;
+  font-weight:lighter;
+}
+
+.heading4{
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+
+/*Paragraphs-------------*/
+.paragraphs {
+  padding: 2em;
+  border-radius: .3em;
+  background-color: #ffffff;
+  border: 1.5px solid #E5E7DA;
+  box-shadow: 3px 3px 3px #B1BC9E;
+}
+
+
+/*Bullet list-------------*/
+
+.blist ul{
+  font-family:"Lato"; 
+  border: 1px solid red;
+}
+
+/*
+  Numbered lists----------------
+*/
+.nlist {
+  display:flex;
+  padding: 10px;
+  background-color: #ffffff;
+  line-height: 2em;
+  border: 2px solid #00000030;
+  border-radius: 0.2em;
+  width:20%;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/*
+  Navigation bar----------------
+*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #B1BC9E;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  font-family: "Lato";
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color:  #F0F0F0;
+  transition: 0.3s;
+}
+
+
+/*
+  Product lisitng-----------------
+*/
+
+.grid{
+  display:flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.grid>div{
+  flex-basis: 30%;
+  margin: 0.2rem;
+  
+}
+
+.grid>div:hover{
+  box-shadow: 0px 3px 3px #bbbbbb; 
+}
+
+.grid img{
+  width:100%;
+  transform:scale(1);
+  transition:transform 1s;
+ 
+
+}
+
+.pic{
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.grid img:hover{
+  transform:scale(1.2);
+
+}
+
+.grid h1{
+  text-align: center;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: bold;
+  margin:0.4rem 0;
+}
+.grid h2{
+  text-align: center;
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: lighter;
+  margin:0.4rem 0;
+}
+
+@media only screen and (max-width: 500px){
+  .grid{
+    flex-direction: column;
+  }
+}
+
+
+/*
+  Payment form-----------------
+*/
+
+.payment {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1.5px solid #E5E7DA;
+  border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-shadow: 3px 3px 3px #B1BC9E; 
+}
+
+.payment input{
+  width:100%;
+}
+
+.payment-form1 input{
+  width: 30px;
+}
+
+.pay-label {
+  font-size: 16px;
+}
+
+/*
+  Checkout cart-----------------
+*/
+
+.cart-item {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  border: 1.5px solid #E5E7DA;
+  border-radius: 0.2em;
+  display: flex;
+  box-shadow: 3px 3px 3px #B1BC9E; 
+}
+
+.cart-left {
+  flex: 80%;
+}
+
+
+.cart-right {
+  flex: 10%;
+}
+
+/*
+  ART DIRECTION-----------------
+*/
+/*
+  Color palettes-----------------
+*/
+
+.color-palettes {
+  display: flex;
+  padding: .5em;
+  background-color: #FFF;
+
+}
+
+.color-palettes>div {
+  flex-basis: 20%;
+  text-align: center;
+  padding: 100px 0 ;
+}
+
+.color-palettes>div:nth-of-type(1){
+  background-color: #E5E7DA;
+}
+
+.color-palettes>div:nth-of-type(2){
+  background-color: #B2BD9F;
+}
+
+.color-palettes>div:nth-of-type(3){
+  background-color: rgb(187,202,218);;
+}
+
+.color-palettes>div:nth-of-type(4){
+  background-color: #E2E7ED;
+}
+
+.color-palettes>div:nth-of-type(5){
+  background-color: #5F6973;
+}
+
+.font>h3 {
+  font-size: 30px;
+  font-kerning: 1em;
+  color: #465E4A;
+}
+
+.font {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50em;
+}
+
+
+
+/*
+  Branding ideas-----------------
+*/
+.branding>h4 {
+  color: #919c7e;
+  font-style: italic;
+}
+
+
