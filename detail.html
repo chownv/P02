@@ -7,143 +7,11 @@
 
     <link href="./P01 - Style Guide Template_files/main.css" rel="stylesheet">
     <link href="./P01 - Style Guide Template_files/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      </head>
-     <style>
-       main.single-product{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-}
 
-.single-product-left img{
-  width:100%;
-  left: 0;
-  top: 0;
-  transition: all 0.3s ease;
-}
-
-.single-product-left{
-
-  /*border:1px solid red;*/
-  width:65%;
-}
-
-.single-product-right{
-  margin-left: 5%;
-  /*border:1px solid green;*/
-  width:35%;
-}
-
-.product-description {
-  border-bottom: 1px solid #E1E8EE;
-  margin-bottom: 20px;
-}
-.product-description span {
-  font-size: 12px;
-  color: #358ED7;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.product-description h1 {
-  font-weight: 300;
-  font-size: 52px;
-  color: #43484D;
-  letter-spacing: -2px;
-}
-.product-price {
-  display: flex;
-  align-items: center;
-}
-
-.product-price span {
-  font-size: 26px;
-  font-weight: 300;
-  color: #43474D;
-  margin-right: 20px;
-}
-.cable-choose {
-  margin-bottom: 20px;
-}
-
-.cable-choose button {
-  border: 2px solid #E1E8EE;
-  border-radius: 6px;
-  padding: 13px 20px;
-  font-size: 14px;
-  color: #5E6977;
-  background-color: #fff;
-  cursor: pointer;
-  transition: all .5s;
-}
-
-.cable-choose button:hover,
-.cable-choose button:active,
-.cable-choose button:focus {
-  border: 2px solid #86939E;
-  outline: none;
-}
-
-.cable-config {
-  border-bottom: 1px solid #E1E8EE;
-  margin-bottom: 20px;
-}
-
-.cable-config a {
-  color: #358ED7;
-  text-decoration: none;
-  font-size: 12px;
-  position: relative;
-  margin: 10px 0;
-  display: inline-block;
-}
-.cable-config a:before {
-  content: "?";
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  border: 2px solid rgba(53, 142, 215, 0.5);
-  display: inline-block;
-  text-align: center;
-  line-height: 16px;
-  opacity: 0.5;
-  margin-right: 5px;
-}
-
-.cart-btn {
-  display: inline-block;
-  padding: 0.5rem;
-  color: #FFF;
-  background-color: #8f997f;
-  text-decoration: none;
-  border-radius: 0.25em;
-  transition-property: background-color; 
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-.cart-btn:hover {
-  background-color: #B2BD9F;
-}
-
-@media screen and (max-width:734px){
-  main.single-product{
-    flex-direction: column;
-  }
-
-  .single-product-left{
-    /*border:1px solid red;*/
-    width:95%;
-    margin:auto;
-  }
-
-  .single-product-right{
-    /*border:1px solid red;*/
-    width:95%;
-    margin:auto;
-  }
-}
-     </style>
+<main>
      <div class="First_Line">
 <h4>WORLDWIDE FREE SHIPPING over $50</h4>
 <h4>MADE IN CANADA</h4>
@@ -174,19 +42,25 @@
 
    <main class="single-product">
 
-      <!-- Left Column / Headphones Image -->
+
       <div class="single-product-left">
         <img src="./img/set1.jpg" alt="" id="product-image">
       </div>
 
 
-      <!-- Right Column -->
+
       <div class="single-product-right">
 
         <!-- Product Description -->
         <div class="product-description">
-          <span>Planters Set</span>
-          <h1>THEO</h1>
+
+          <h1>HOBO</h1>
+          <h2>planter set - Quadruplet</h2><br>
+
+          <div class="cable-config"></div>
+          <p>Set of 4 small indoor planters. Minimalist and geometric design for home decor. Organic and sustainable design.</p>
+          <p>Made in Canada</p><br>
+
          
         </div>
 
@@ -203,15 +77,17 @@
 
           <!-- Cable Configuration -->
           <div class="cable-config">
-            <span>Shipping</span>
+
+
+
+            <span>Shipping method</span>
             <br>
             <br>
 
 
             <div class="cable-choose">
               <button>Standard</button>
-              <button>Quick</button>
-              <button>Get it tomorrow!</button>
+              <button>Express</button>
             </div>
 
             
@@ -222,8 +98,8 @@
         <div class="product-price">
           <br>
         <br>
-          <span>$148</span>
-          <a href="#" class="cart-btn">Add to cart</a>
+          <span>$58</span>
+          <a href="checkout.html" class="cart-btn">Add to cart</a>
         </div>
       </div>
     </main>
