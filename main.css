@@ -14,9 +14,9 @@ body {
 .element {
   padding-bottom: 2rem;
   padding-top: 2rem;
-  border-top-width: 0.1rem;
+/*  border-top-width: 0.1rem;
   border-top-style: solid;
-  border-top-color: #bbb;
+  border-top-color: #bbb;*/
 }
 
 .header{
@@ -991,7 +991,7 @@ label {
   
   padding-left: 1rem;
 border-left-style:solid; 
-border-left-color:#bbb;
+border-left-color:rgb(187,202,218);
 border-left-width:0.5rem;
 white-space: nowrap;
 
@@ -1005,6 +1005,7 @@ white-space: nowrap;
   margin:0.4rem 0;
   margin-bottom: 2rem;
    overflow:hidden;
+   color:rgb(187,202,218);
   
 
 }
@@ -1048,15 +1049,19 @@ white-space: nowrap;
   }
 @media only screen and (max-width: 734px){
   .list h1{
-text-align: center;
-  font-size: 8px;
+  text-align: center;
+  font-size: 20px;
+  color:rgb(187,202,218);
+  border-bottom: 0.4rem solid rgb(187,202,218);
+  width: 100%;
   }
+
   .list h2{
    
    text-align: left;
     white-space: pre-line;
    
-  font-size: 6px;
+  font-size: 15px;
  
   }
   .list{
@@ -1354,9 +1359,11 @@ flex-basis: 30%;
   .contact_form_left{
     margin:0;
     width:90%;
+    margin-bottom: 2rem;
   }
   .contact_right{
     margin:0;
+    width:90%;
   }
 
 }
@@ -1448,9 +1455,10 @@ label{
     padding: 0;
   }
   .address{
-    border:solid 2px red;
+/*    border:solid 2px red;*/
    width: 90%;
     margin:auto;
+    margin-bottom:2rem;
   }
   .continue{
     margin-left: 12rem;
