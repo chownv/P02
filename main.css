@@ -318,50 +318,42 @@ z-index: 1;
 
 
   .about{
-
-   
-
-    
+ 
    float:center;
   display:flex;
   justify-content: center;
   width: 100%;
+  border:1px solid red;
   
   }
+
+
   .about_img{
-   flex-basis: 70%;
-  
-   
+   flex-basis: 50%;
    transition:all 1s;
    padding-bottom: 1rem;
+
 
   }
 
   .about_img img{
     width: 100%;
-    
-     
-    
-    
+  
    
   }
 
   .about_text{
     padding-left:2%; 
     width: 100%;
-    
-    
     flex-basis: 60%;
-    
-   
-    
-
     white-space: normal;
-
+    width: 50%
+    border: 2px solid red;
   }
+
   .about_text h2 h3 p{
     text-align: right;
-
+    border: 1px solid red;
   }
 
 
