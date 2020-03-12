@@ -96,12 +96,10 @@ nav a:hover, nav a:focus {
   } 
   @media screen and (max-width:734px){
     .menu{
-     
+     margin-top: 0.3rem;
+     margin-right: 0.45rem;
      float:right;
-     margin-top: -0.5rem;
-     margin-right: 1.1rem;
-
-      display:block;
+    display:block;
     }
 
     nav{
@@ -130,7 +128,7 @@ nav a:hover, nav a:focus {
       flex-direction: column;
     }
     .logo{
-      margin-top:-6rem;
+      margin-top:-4.5rem;
       width:40%;
     }
     .logo img{
@@ -171,9 +169,13 @@ nav a:hover, nav a:focus {
   }
   @media only screen and (max-width: 734px){
     .head_icon{
-      margin:1.2rem;
+      margin-top: 0.1rem;
     
 
+    }
+    .head_icon img{
+      margin:0rem 0.5rem;
+      width: 30px;
     }
 
   }
@@ -1593,10 +1595,18 @@ label{
   background-color: #B2BD9F;
 }
   .footer{
-  
+
+  display: flex;
+  flex-direction:column;
     width: 100%;
     text-align: center;
     text-decoration: none;
+  }
+  @media screen and (max-width:734px){
+.footer{
+  display: none;
+
+}
   }
  
 
