@@ -29,7 +29,7 @@ body {
 
 }
 .logo{
-  border: solid 2px red;
+  
   flex-basis: 30%;
 }
 .logo img{
@@ -37,7 +37,8 @@ body {
 }
 nav {
 
-  border:solid 2px red;
+
+
   flex-basis:80%;
   text-align: right;
   padding-top:1rem;
@@ -134,7 +135,7 @@ nav a:hover, nav a:focus {
     
     justify-content: flex-end;
      
-    border:solid 2px red;
+   
     flex-basis: 50%;
 
 
@@ -174,7 +175,7 @@ nav a:hover, nav a:focus {
   
   /*...............home page........................................................................*/
   .main{
-    border: solid 2px red;
+    
     
  background-image:url('./img/circle_background.png');
     background-repeat: no-repeat;
@@ -312,7 +313,7 @@ z-index: 1;
 
    
 
-     border: solid 2px red;
+    
    float:center;
   display:flex;
   justify-content: center;
@@ -330,7 +331,7 @@ z-index: 1;
 
   .about_img img{
     width: 100%;
-    border: solid 2px red;
+    
      
     
     
@@ -344,7 +345,7 @@ z-index: 1;
     
     flex-basis: 60%;
     
-    border: solid 2px red;
+   
     
 
     white-space: normal;
@@ -382,7 +383,7 @@ z-index: 1;
 
    
 margin-top: 2rem;
-     border: solid 2px red;
+     
    float:center;
   display:flex;
   justify-content: center;
@@ -400,7 +401,7 @@ margin-top: 2rem;
 
   .event_img img{
     width: 100%;
-    border: solid 2px red;
+  
      
     
     
@@ -414,8 +415,7 @@ margin-top: 2rem;
     
     flex-basis: 60%;
     
-    border: solid 2px red;
-    
+   
 
     white-space: normal;
 
@@ -921,7 +921,7 @@ label {
 
 .blist ul{
   font-family:"Lato"; 
-  border: 1px solid red;
+ 
 }
 
 /*
@@ -1279,7 +1279,6 @@ text-align: center;
 */
 
 .contact_right{
-  border:2px solid red;
 flex-basis: 50%;
   text-align: center;
   background-color: #ffffff;
@@ -1314,8 +1313,6 @@ flex-basis: 50%;
 }
 
 .contact_form_left{
-
-  border:solid 2px red;
   flex-basis: 30%;
   background-color: #ffffff;
   padding: 20px;
