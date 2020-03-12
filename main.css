@@ -24,9 +24,20 @@ body {
   width:100%;
   
   margin-bottom: 3rem;
+}
+.search{
+ display:flex;
+
+
   
-
-
+}
+.search input{
+  width:100%;
+}
+#search{
+  flex-basis:90%;
+  
+  display: none;
 }
 .logo{
   

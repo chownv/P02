@@ -8,19 +8,46 @@
 
   <link href="./main.css" rel="stylesheet">
   <link href="./css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
+<script>
+function displayMenu() {
+var x = document.getElementById("guide");
+if (x.style.display == ""){
+x.style.display = "block"
+}else{
+x.style.display = ""
+}
 
+}
+function displaySearch() {
+var y = document.getElementById("search");
+if (y.style.display == ""){
+y.style.display = "block"
+}else{
+y.style.display = ""
+}
+
+}
+
+
+</script>
+
+<div class="search">
+<div id ="search" >
+  <input type="text" name="uname" placeholder="Seach here">
+  <button>SEARCH</button>
+</div>
+</div>
 <div class="First_Line">
   <h4>WORLDWIDE FREE SHIPPING over $50</h4>
   <h4>MADE IN CANADA</h4>
 
 </div>
 <div class="head_icon">
-  <a href=""><img class="icon_4" src="./img/search.png" alt=""></a>
+  <a href="javascript:void(0);" onclick="displaySearch()"><img class="icon_4" src="./img/search.png" alt=""></a>
   <a href="detail.html"><img class="icon_4" src="./img/like.png" alt=""></a>
   <a href="contact.html"><img class="icon_4" src="./img/account.png" alt=""></a>
   <a href="checkout.html"><img class="icon_4" src="./img/bag.png" alt=""></a>
