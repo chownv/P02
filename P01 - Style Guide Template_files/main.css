@@ -228,8 +228,58 @@ nav a:hover, nav a:focus {
     z-index: 1;
     margin-left: 40%;
     margin-bottom: -40%;
-    margin-top: 20%;    
+    margin-top: 20%;   
+
   }
+  .main_word1 a{
+
+  color: black;
+  text-decoration:none;
+  transition: color 0.1s ease-out;
+  text-shadow:1px 0px 0px #99a5b0;
+}
+
+.main_word1 a :hover, .main_word1 a:focus {
+  text-decoration:underline;
+
+}
+  
+    .main_word2 a{
+
+  color: black;
+  text-decoration:none;
+  transition: color 0.1s ease-out;
+  text-shadow:1px 0px 0px #99a5b0;
+}
+
+.main_word2 a :hover, .main_word1 a:focus {
+  text-decoration:underline;
+
+}
+  .second_word1 a{
+
+  color: black;
+  text-decoration:none;
+  transition: color 0.1s ease-out;
+  text-shadow:1px 0px 0px #99a5b0;
+}
+
+.second_word1 a :hover, .second_word1 a:focus {
+  text-decoration:underline;
+
+}
+  .second_word2 a{
+
+  color: black;
+  text-decoration:none;
+  transition: color 0.1s ease-out;
+  text-shadow:1px 0px 0px #99a5b0;
+}
+
+.second_word2 a :hover, .second_word2 a:focus {
+  text-decoration:underline;
+
+}
   
   .main_right{
  padding-left: 5%;
@@ -492,12 +542,12 @@ display: block;
 }
 .main h2{
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 
 }
 .second h2{
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 
 }
 .main h3{
@@ -516,12 +566,7 @@ display: block;
   color:#bbb;
 
 }
-.main a{
-  color:black;
-}
-.second a{
-  color:black;
-}
+
 
 .third {
   margin-top: 2rem;
@@ -639,20 +684,18 @@ code {
   
 }
   }
-}
-
 
 
 .in-text-link{
-  color: #9e8b7d;
+  color: black;
   text-decoration:none;
   transition: color 0.1s ease-out;
-  text-shadow:0px -1px 0px #CFC8BD;
+  text-shadow:1px 0px 0px #99a5b0;
 }
 
 .in-text-link:hover, .in-text-link:focus {
   text-decoration:underline;
-  color: #bdaa9d;
+
 }
 
 /*Styling for navigation button*/
