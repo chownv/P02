@@ -23,6 +23,7 @@ body {
   display:flex;
   width:100%;
   height:100px;
+  margin-bottom: 3rem;
   
 
 
@@ -246,7 +247,7 @@ z-index: 1;
 
   .about{
 
-    margin-top: 10%;
+   
 
      border: solid 2px red;
    float:center;
@@ -509,7 +510,7 @@ position: relative;
 }
 
 .third {
-  margin-top: 10rem;
+  margin-top: 2rem;
   display:flex;
 justify-content: center;
  
@@ -1218,7 +1219,7 @@ label{
 }
 
 .checkout>div{
-  margin-top:2em;
+ 
 
 }
 
